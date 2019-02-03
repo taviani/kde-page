@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/kde-page",
   siteMetadata: {
     title: "KDE eurl | 2004-2016",
     author: "Edouard Lacan",

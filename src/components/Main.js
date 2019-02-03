@@ -56,6 +56,7 @@ class Main extends React.Component {
           <p>During all this time, hosting was pretty simple and straightforward. It was called: <b>Linux</b> dedicated server. I started with a little bit of FTP long time ago but switched very rapidly to <b>ssh</b> (scp, rsync) and all its power.</p>
 
           <p>There was no version control system, nor testing, nor containers, nor cloud deployment at KDE. There was no Node.js, nor React, nor Switch, nor Rest API... But the will to use all those and the basis to get to it was already there!</p>
+          <p><a href="javascript:;" onClick={() => {this.props.onCloseOpen('contact')}}>Any question?</a></p>
           {close}
         </article>
 
