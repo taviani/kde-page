@@ -1,24 +1,27 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "kde.fr",
+  "description": "kde.fr",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Edouard Lacan",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.7",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "latest",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "terser": "3.14"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
@@ -30,6 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/taviani/kde-page"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
   }
 }
