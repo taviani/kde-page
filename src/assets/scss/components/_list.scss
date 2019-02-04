@@ -16,11 +16,24 @@
 		}
 	}
 
+	#about ul {
+		list-style: none;
+
+		li:before {
+			content: "\f00c"; /* FontAwesome Unicode */
+			font-family: FontAwesome;
+			font-size: xx-small;
+			display: inline-block;
+			margin-left: -1.3em; /* same as padding-left set on li */
+			width: 1.3em; /* same as padding-left set on li */
+		}
+
+	}
+
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
-
 		li {
 			padding-left: 0.5em;
 		}
@@ -148,6 +161,15 @@
 			@include breakpoint(xsmall) {
 				margin: 0 0 _size(element-margin) 0;
 
+
+			#about ul li:before {
+					content: "\f00c"; /* FontAwesome Unicode */
+					font-family: FontAwesome;
+					font-size: xx-small;
+					display: inline-block;
+					margin-left: -1.3em; /* same as padding-left set on li */
+					width: 1.3em; /* same as padding-left set on li */
+				}
 				li {
 					padding: (_size(element-margin) * 0.5) 0 0 0;
 					display: block;

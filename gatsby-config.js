@@ -1,9 +1,10 @@
 module.exports = {
-  pathPrefix: "/kde-page",
+  pathPrefix: '/',
   siteMetadata: {
-    title: "KDE eurl | 2004-2016",
-    author: "Edouard Lacan",
-    description: "A web agency dedicated to music and small businesses administration."
+    title: 'KDE eurl | 2004-2016',
+    author: 'Edouard Lacan',
+    description:
+      'A web agency dedicated to music and small businesses administration.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -20,6 +21,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }

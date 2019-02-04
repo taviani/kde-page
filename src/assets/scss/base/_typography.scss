@@ -110,7 +110,8 @@
 		font-size: 0.6rem;
 	}
 
-	@include breakpoint(small) {
+
+@include breakpoint(small) {
 		h1 {
 			font-size: 1.75rem;
 			line-height: 1.4;

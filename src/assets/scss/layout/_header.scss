@@ -50,12 +50,13 @@
 		.logo {
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 8rem;
+			line-height: 6.3rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
 
 			img {
-				height: 2.5rem;
+				height: 1.5rem;
+				width: 4rem;
 			}
 		}
 
@@ -197,10 +198,11 @@
 			.logo {
 				width: 4.75rem;
 				height: 4.75rem;
-				line-height: 7.4rem;
+				line-height: 5.5rem;
 
 				img {
-					height: 2.7rem;
+					height: 1.4rem;
+					width: 3.2rem;
 				}
 			}
 

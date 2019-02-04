@@ -34,8 +34,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/taviani/kde-page"
-  },
-  "resolutions": {
-    "terser": "3.14.1"
   }
 }
