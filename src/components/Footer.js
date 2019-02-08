@@ -5,8 +5,7 @@ const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
       &copy; Edouard Lacan. Built with:{' '}
-      <a href="https://www.gatsbyjs.org/">Gatsby.js</a>. Hosted with ❤️ by{' '}
-      <a href="https://github.com">Github</a>.
+      <a href="https://www.gatsbyjs.org/">Gatsby.js</a>.
     </p>
   </footer>
 )

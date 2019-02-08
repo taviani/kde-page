@@ -115,7 +115,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <p>
-            Since 2016 KDE has ceased its activity but I didn't.<br/>
+            Since 2017 KDE has ceased its activity but I didn't.<br/>
             I'm still looking for new challenge to take. Now entirely dedicated to modern web infrastructures, I'll be happy to help you managing your next cloud native apps and finding your way in an ever changing world made of images, containers, clusters, pods and other instances 😀 <br />
             Shoot me an <a href="mailto:ed@kde.fr">email</a>, hit me on <a href="https://www.linkedin.com/in/edouard-lacan/">LinkedIn</a>, let me know what's up!
           </p>

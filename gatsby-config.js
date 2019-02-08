@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: 'KDE eurl | 2005-2016',
+    title: 'KDE eurl | 2005-2017',
     author: 'Edouard Lacan',
     description:
       'A web agency dedicated to music and small businesses administration.',
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'KDE 2005-2016',
+        name: 'KDE 2005-2017',
         short_name: 'kde',
         start_url: '/',
         background_color: '#663399',
