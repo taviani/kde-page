@@ -31,13 +31,9 @@
 
 // Component.
 
-	@include meta.load-css('components/form');
-	@include meta.load-css('components/box');
 	@include meta.load-css('components/icon');
 	@include meta.load-css('components/image');
 	@include meta.load-css('components/list');
-	@include meta.load-css('components/table');
-	@include meta.load-css('components/button');
 
 // Layout.
 

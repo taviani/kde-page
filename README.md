@@ -4,14 +4,17 @@
 
 Petite présentation statique de mon activité en tant qu'indépendant pendant 13 ans.
 
+Live site: https://kde.fr/
+
 ## Stack
 
-- [Astro](https://astro.build/) (static site)
-- SCSS (HTML5 UP Dimension template)
+- [Astro](https://astro.build/) 7 (static output)
+- SCSS — [Dimension](https://html5up.net/dimension) template by HTML5 UP
+- Vanilla TypeScript for panel navigation
 
 ## Development
 
-Requires Node 22+.
+Requires Node 22+ (see `.node-version`).
 
 ```bash
 fnm use 22   # or nvm use 22
@@ -30,19 +33,11 @@ npm run preview
 
 Static output is written to `dist/`.
 
-## Deploy
+## Scripts
 
-Deployment runs via GitHub Actions on push to `master` (or manually from the Actions tab).
-
-Configure these repository secrets under **Settings → Secrets and variables → Actions**:
-
-| Secret | Description |
-|--------|-------------|
-| `DEPLOY_SSH_KEY` | Private SSH key for the deploy user — **no passphrase** (required for CI) |
-| `DEPLOY_USER` | SSH username with write access to the web root (e.g. `deploy`) |
-| `DEPLOY_HOST` | Server hostname |
-| `DEPLOY_PATH` | Absolute path to the web root, trailing slash (e.g. `/var/www/kde/`) |
-
-The deploy user only needs SSH access and write permission on the target directory — no root login required.
-
-Hard-refresh https://kde.fr/ after deploy.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build locally |
+| `npm run format` | Format JS, Astro, and TS with Prettier |

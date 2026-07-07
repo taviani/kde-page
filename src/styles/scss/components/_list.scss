@@ -1,64 +1,31 @@
 @use "../libs/functions";
-@use "../libs/skel";
-
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 functions.size(element-margin) 0;
-		padding-left: 1.25em;
-
-		li {
-			padding-left: 0.25em;
-		}
-	}
-
 	#about ul {
 		list-style: none;
+		margin: 0 0 functions.size(element-margin) 0;
+		padding-left: 1em;
 
-		li:before {
-			content: "\f00c"; /* FontAwesome Unicode */
-			font-family: FontAwesome;
-			font-size: xx-small;
-			display: inline-block;
-			margin-left: -1.3em; /* same as padding-left set on li */
-			width: 1.3em; /* same as padding-left set on li */
+		li {
+			padding-left: 0.5em;
+
+			&::before {
+				content: "✓";
+				display: inline-block;
+				font-size: 0.65em;
+				font-weight: functions.font(weight-bold);
+				margin-left: -1.3em;
+				width: 1.3em;
+			}
 		}
-
 	}
 
 	ul {
-		list-style: disc;
-		margin: 0 0 functions.size(element-margin) 0;
-		padding-left: 1em;
-		li {
-			padding-left: 0.5em;
-		}
-
-		&.alt {
-			list-style: none;
-			padding-left: 0;
-
-			li {
-				border-top: solid functions.size(border-width) functions.palette(border);
-				padding: 0.5em 0;
-
-				&:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-			}
-		}
-
 		&.icons {
 			cursor: default;
 			list-style: none;
+			margin: 0 0 functions.size(element-margin) 0;
 			padding-left: 0;
 
 			li {
@@ -70,12 +37,12 @@
 				}
 
 				a {
+					align-items: center;
 					border-radius: 100%;
 					box-shadow: inset 0 0 0 functions.size(border-width) functions.palette(border);
 					display: inline-flex;
-					align-items: center;
-					justify-content: center;
 					height: 2.25rem;
+					justify-content: center;
 					width: 2.25rem;
 
 					&:hover {
@@ -87,137 +54,5 @@
 					}
 				}
 			}
-		}
-
-		&.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-
-			li {
-				display: inline-block;
-				padding: 0 (functions.size(element-margin) * 0.5) 0 0;
-				vertical-align: middle;
-
-				&:last-child {
-					padding-right: 0;
-				}
-			}
-
-			&.small {
-				li {
-					padding: 0 (functions.size(element-margin) * 0.25) 0 0;
-				}
-			}
-
-			&.vertical {
-				li {
-					display: block;
-					padding: (functions.size(element-margin) * 0.5) 0 0 0;
-
-					&:first-child {
-						padding-top: 0;
-					}
-
-					> * {
-						margin-bottom: 0;
-					}
-				}
-
-				&.small {
-					li {
-						padding: (functions.size(element-margin) * 0.25) 0 0 0;
-
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
-
-			&.fit {
-				display: table;
-				margin-left: (functions.size(element-margin) * -0.5);
-				padding: 0;
-				table-layout: fixed;
-				width: calc(100% + #{(functions.size(element-margin) * 0.5)});
-
-				li {
-					display: table-cell;
-					padding: 0 0 0 (functions.size(element-margin) * 0.5);
-
-					> * {
-						margin-bottom: 0;
-					}
-				}
-
-				&.small {
-					margin-left: (functions.size(element-margin) * -0.25);
-					width: calc(100% + #{(functions.size(element-margin) * 0.25)});
-
-					li {
-						padding: 0 0 0 (functions.size(element-margin) * 0.25);
-					}
-				}
-			}
-
-			@include skel.breakpoint(xsmall) {
-				margin: 0 0 functions.size(element-margin) 0;
-
-
-			#about ul li:before {
-					content: "\f00c"; /* FontAwesome Unicode */
-					font-family: FontAwesome;
-					font-size: xx-small;
-					display: inline-block;
-					margin-left: -1.3em; /* same as padding-left set on li */
-					width: 1.3em; /* same as padding-left set on li */
-				}
-				li {
-					padding: (functions.size(element-margin) * 0.5) 0 0 0;
-					display: block;
-					text-align: center;
-					width: 100%;
-
-					&:first-child {
-						padding-top: 0;
-					}
-
-					> * {
-						width: 100%;
-						margin: 0 !important;
-
-						&.icon {
-							&:before {
-								margin-left: -2em;
-							}
-						}
-					}
-				}
-
-				&.small {
-					li {
-						padding: (functions.size(element-margin) * 0.25) 0 0 0;
-
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	dl {
-		margin: 0 0 functions.size(element-margin) 0;
-
-		dt {
-			display: block;
-			font-weight: functions.font(weight-bold);
-			margin: 0 0 (functions.size(element-margin) * 0.5) 0;
-		}
-
-		dd {
-			margin-left: functions.size(element-margin);
 		}
 	}
