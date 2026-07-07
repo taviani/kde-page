@@ -55,8 +55,10 @@
 			border-radius: 100%;
 
 			img {
-				height: 1.5rem;
 				width: 4rem;
+				height: auto;
+				max-height: 1.5rem;
+				object-fit: contain;
 			}
 		}
 
@@ -201,8 +203,10 @@
 				line-height: 5.5rem;
 
 				img {
-					height: 1.4rem;
 					width: 3.2rem;
+					height: auto;
+					max-height: 1.4rem;
+					object-fit: contain;
 				}
 			}
 

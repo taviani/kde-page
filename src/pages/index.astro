@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <div class="body is-loading">
+    <div id="wrapper">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+    <div id="bg"></div>
+  </div>
+</BaseLayout>
+
+<script src="../scripts/panels.ts"></script>

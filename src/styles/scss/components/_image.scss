@@ -14,7 +14,7 @@
 
 		&:before {
 			@include vendor('pointer-events', 'none');
-			background-image: url('../../images/overlay.png');
+			background-image: url('/images/overlay.png');
 			background-color: _palette(bg-overlay);
 			border-radius: _size(border-radius);
 			content: '';
@@ -30,6 +30,8 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+			height: auto;
+			max-width: 100%;
 		}
 
 		&.left,
