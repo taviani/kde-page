@@ -51,13 +51,16 @@
 		}
 
 		.logo {
+			@include skel.vendor('display', 'flex');
+			@include skel.vendor('align-items', 'center');
+			@include skel.vendor('justify-content', 'center');
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 6.3rem;
 			border: solid functions.size(border-width) functions.palette(border);
 			border-radius: 100%;
 
 			img {
+				display: block;
 				width: 4rem;
 				height: auto;
 				max-height: 1.5rem;
@@ -203,13 +206,10 @@
 			.logo {
 				width: 4.75rem;
 				height: 4.75rem;
-				line-height: 5.5rem;
 
 				img {
 					width: 3.2rem;
-					height: auto;
 					max-height: 1.4rem;
-					object-fit: contain;
 				}
 			}
 
