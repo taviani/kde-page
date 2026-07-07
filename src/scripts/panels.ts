@@ -108,6 +108,12 @@ function initPanels() {
     el.addEventListener('click', () => {
       closeArticle();
     });
+    el.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        closeArticle();
+      }
+    });
   });
 }
 
