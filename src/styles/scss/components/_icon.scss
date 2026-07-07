@@ -7,9 +7,15 @@
 /* Icon */
 
 	.icon {
-		@include icon;
 		border-bottom: none;
 		position: relative;
+
+		svg {
+			display: block;
+			fill: currentColor;
+			height: 1rem;
+			width: 1rem;
+		}
 
 		> .label {
 			display: none;

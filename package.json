@@ -1,33 +1,26 @@
 {
   "name": "kde.fr",
   "description": "kde.fr",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Edouard Lacan",
-  "dependencies": {
-    "gatsby": "^2.0.76",
-    "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.0.16",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-sass": "^2.0.7",
-    "node-sass": "^4.11.0",
-    "react": "latest",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
-    "terser": "3.14"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write '**/*.{js,astro,ts}'"
+  },
+  "dependencies": {
+    "astro": "^7.0.6",
+    "sass": "^1.86.3"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
-    "prettier": "^1.14.2"
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   },
   "repository": {
     "type": "git",
