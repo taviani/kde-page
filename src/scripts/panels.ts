@@ -82,6 +82,12 @@ function initPanels() {
 
   document.addEventListener('mousedown', handleClickOutside);
 
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && isArticleVisible) {
+      closeArticle();
+    }
+  });
+
   document.querySelectorAll('[data-open-article]').forEach((el) => {
     el.addEventListener('click', (event) => {
       event.preventDefault();
